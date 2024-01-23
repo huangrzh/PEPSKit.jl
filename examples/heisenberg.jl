@@ -143,5 +143,4 @@ function main(;d=2,D=2,Lx=1,Ly=1)
         scale! = my_scale!,
         add! = my_add!
     )
-    return ψ
 end

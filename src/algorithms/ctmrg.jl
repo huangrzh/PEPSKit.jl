@@ -79,7 +79,7 @@ function left_move(peps::InfinitePEPS{PType},alg::CTMRG,envs::CTMRGEnv) where PT
 
             Q1 = northwest_corner(envs.edges[SOUTH,mod1(row+1,end),col],envs.corners[SOUTHWEST,mod1(row+1,end),col],envs.edges[WEST,mod1(row+1,end),col],peps_sw);
             Q2 = northwest_corner(envs.edges[WEST,row,col],envs.corners[NORTHWEST,row,col],envs.edges[NORTH,row,col],peps_nw);
-            Q12 = Q1*Q2
+            #Q12 = Q1*Q2
             #@show norm(Q1), norm(Q2), norm(Q12)
 
             trscheme = alg.trscheme
